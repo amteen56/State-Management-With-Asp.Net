@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SessionState.aspx.cs" Inherits="Session_Cookie_Application__State.SessionState" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CookieExpiration.aspx.cs" Inherits="Session_Cookie_Application__State.CookieExpiration" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Page 2</title>
+    <title>Page 3</title>
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -15,8 +15,8 @@
     <form id="form1" runat="server">
         <div>
               <div class="container">
-            <h1 runat="server" id="datalabel">Private Counter: </h1>
-            <asp:Button  runat="server" ID="increment" CssClass="btn btn-sucess" Text="Counter Increment" OnClick="counter_Click" />
+                  <asp:Label Font-Size="X-Large" CssClass="alert-success" ID="datalabel" runat="server" Text="Page Expired"></asp:Label>
+                  <asp:Label Font-Size="X-Large"  CssClass="alert-danger" ID="datalabel1" runat="server"></asp:Label>
     </div>
         </div>
     </form>

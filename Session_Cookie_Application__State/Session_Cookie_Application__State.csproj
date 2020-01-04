@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ApplicationState.aspx" />
+    <Content Include="CookieExpiration.aspx" />
     <Content Include="Global.asax" />
     <Content Include="SessionState.aspx" />
     <Content Include="Web.config" />
@@ -79,6 +80,13 @@
     </Compile>
     <Compile Include="ApplicationState.aspx.designer.cs">
       <DependentUpon>ApplicationState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CookieExpiration.aspx.cs">
+      <DependentUpon>CookieExpiration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CookieExpiration.aspx.designer.cs">
+      <DependentUpon>CookieExpiration.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
