@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ApplicationState.aspx.cs" Inherits="Session_Cookie_Application__State.ApplicationState" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SessionState.aspx.cs" Inherits="Session_Cookie_Application__State.SessionState" %>
 
 <!DOCTYPE html>
 
@@ -15,7 +15,7 @@
     <form id="form1" runat="server">
         <div>
               <div class="container">
-            <h1 runat="server" id="datalabel">Shared Counter: </h1>
+            <h1 runat="server" id="datalabel">Private Counter: </h1>
             <asp:Button  runat="server" ID="increment" CssClass="btn btn-sucess" Text="Counter Increment" OnClick="counter_Click" />
     </div>
         </div>

@@ -10,7 +10,7 @@
 namespace Session_Cookie_Application__State {
     
     
-    public partial class ApplicationState {
+    public partial class SessionState {
         
         /// <summary>
         /// form1 control.
