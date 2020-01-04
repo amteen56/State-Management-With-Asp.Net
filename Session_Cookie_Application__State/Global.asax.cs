@@ -13,11 +13,11 @@ namespace Session_Cookie_Application__State
         protected void Application_Start(object sender, EventArgs e)
         {
             Application["Counter"] = 0;
-            Application["Created"] = null;
         }
 
         protected void Session_Start(object sender, EventArgs e)
         {
+            Session["Created"] = null;
             Session["Counter"] = 0;
         }
 

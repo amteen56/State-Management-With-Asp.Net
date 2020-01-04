@@ -11,13 +11,13 @@ namespace Session_Cookie_Application__State
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Application["Created"] == null)
+            if (Session["Created"] == null)
             {
                 HttpCookie c = new HttpCookie("sessioncookie");
                 c.Value = "Page Expire In Five Seconds";
                 c.Expires = DateTime.Now.AddSeconds(5);
                 HttpContext.Current.Response.Cookies.Add(c);
-                Application["Created"] = 1;
+                Session["Created"] = 1;
             }
 
                 HttpCookie cookie = Request.Cookies["sessioncookie"];
